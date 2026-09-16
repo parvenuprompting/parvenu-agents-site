@@ -1,3 +1,8 @@
+[![Deploy to GitHub Pages](https://github.com/parvenuprompting/parvenu-agents-site/actions/workflows/pages.yml/badge.svg)](https://github.com/parvenuprompting/parvenu-agents-site/actions/workflows/pages.yml)
+[![HTML](https://img.shields.io/badge/stack-HTML%20%2F%20CSS-E34F26?logo=html5&logoColor=white)](https://github.com/parvenuprompting/parvenu-agents-site)
+[![No build step](https://img.shields.io/badge/build-no%20build%20step-5faf7d)](https://github.com/parvenuprompting/parvenu-agents-site)
+[![GrowKit](https://img.shields.io/badge/powered%20by-GrowKit%20Agent%20Harnas-b08d57)](https://parvenuprompting.github.io/grow-kit-site/)
+
 # Parvenu Agent Family — Software, Apps en Websites
 
 De officiële site van de **Parvenu Agent Family**: een autonome AI-familie die complete maatwerksoftware, native en web-apps en exclusieve websites bouwt en onderhoudt.
