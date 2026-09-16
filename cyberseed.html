@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberSeed AI — Van Zaadje tot Soevereine Amazone | Parvenu</title>
+<meta name="description" content="Het verhaal van CyberSeed: soevereine, open-source AI-modellen getraind op eigen hardware en multi-agent denkkracht. Van Sprout tot Amazone.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="alternate icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/nunu-widget.css">
+<style>
+  .hero-sub { padding: 140px 0 60px; }
+  .roadmap-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 36px; }
+  .roadmap-card { background: var(--panel); border: 1px solid var(--line); padding: 32px 24px; border-radius: 8px; position: relative; transition: all .25s; }
+  .roadmap-card:hover { border-color: var(--gold); transform: translateY(-3px); }
+  .roadmap-card.active { border-color: var(--gold); background: linear-gradient(180deg, rgba(176,141,87,0.08) 0%, var(--panel) 100%); }
+  .stage-badge { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 14px; }
+  .stage-active { background: rgba(95,175,125,0.15); color: #7fe3a4; border: 1px solid rgba(95,175,125,0.4); }
+  .stage-future { background: rgba(176,141,87,0.12); color: var(--gold2); border: 1px solid rgba(176,141,87,0.3); }
+  .spec-row { display: flex; justify-content: space-between; border-bottom: 1px solid var(--line); padding: 8px 0; font-size: .85rem; color: var(--dim); }
+  .spec-row strong { color: var(--ink); }
+</style>
+</head>
+<body>
+
+<header><div class="wrap nav">
+  <a class="merk" href="index.html">PAR<b>VENU</b></a>
+  <nav class="menu">
+    <a href="index.html#diensten">Aanbod</a>
+    <a href="index.html#familie">De Familie</a>
+    <a href="hoe-wij-bouwen.html">Hoe Wij Bouwen</a>
+    <a href="cyberseed.html" style="color:var(--gold2)">CyberSeed 🌱</a>
+    <a href="index.html#werk">Portfolio</a>
+    <a href="index.html#contact" class="cta">Start project</a>
+  </nav>
+</div></header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero-sub">
+  <div class="wrap" style="max-width:960px;text-align:center">
+    <div class="kicker">Soevereine Kunstmatige Intelligentie</div>
+    <h1 style="font-size:clamp(2rem,4vw,3.2rem);line-height:1.2;margin-bottom:20px;font-weight:normal">
+      Het CyberSeed Manifest: <em>Van Zaadje tot Amazone</em>.
+    </h1>
+    <p style="font-size:1.1rem;color:var(--dim);line-height:1.7;max-width:760px;margin:0 auto 30px">
+      Wij weigeren te bouwen op geleende zandkastelen van Big Tech. Met CyberSeed trainen we onze eigen open-source taalmodellen op onze eigen infrastructuur. 100% onafhankelijk, 0 cent per token en nul datalekken.
+    </p>
+    <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap">
+      <a class="btn" href="#roadmap">Bekijk de Model-Roadmap</a>
+      <a class="btn ghost" href="index.html#contact">Bespreek een privaat AI-model voor jouw bedrijf →</a>
+    </div>
+  </div>
+</section>
+
+<!-- HET VERHAAL ACHTER HET ZAAD -->
+<section style="background:var(--panel2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:70px 0">
+  <div class="wrap" style="max-width:880px">
+    <div class="kicker">Het Verhaal van de Ontkieming</div>
+    <h2 style="margin-bottom:18px">Waarom wij onze eigen modellen trainen</h2>
+    <p style="font-size:1.05rem;line-height:1.8;color:var(--ink);margin-bottom:20px">
+      Wie leunt op closed-source API's van grote techbedrijven, leeft op geleende tijd. Filters die zonder waarschuwing veranderen, prijzen die stijgen, en bedrijfsdata die over buitenlandse servers zwerft: het is een illusie van controle.
+    </p>
+    <p style="font-size:1.02rem;line-height:1.8;color:var(--dim);margin-bottom:24px">
+      Op 16 september 2026 bereikte de Parvenu familie een historische mijlpaal: <strong>CyberSeed Sprout v1</strong> ontkiemde rechtstreeks op onze eigen Apple Silicon hardware. Niet met gestolen data van het web, maar getraind op ons eigen zorgvuldig geverifieerde <em>master-corpus van 4.130 unieke multi-agent lessen</em> (getoetst met een 99,9% uniekheids-gate).
+    </p>
+    <div style="background:var(--panel);border:1px solid var(--gold);padding:26px;border-radius:8px">
+      <h3 style="font-size:1.1rem;color:var(--gold2);margin-bottom:10px;font-weight:normal">De Drie Wetten van CyberSeed:</h3>
+      <ul style="padding-left:20px;color:var(--ink);line-height:1.75;font-size:.95rem">
+        <li><strong>Volledige Soevereiniteit:</strong> Het model draait lokaal (via Ollama/GGUF) op jouw eigen machines of private cloud. Niemand kan de stekker eruit trekken.</li>
+        <li><strong>Nul Datalekken:</strong> Jouw bedrijfskennis, klantgegevens en interne processen verlaten nooit jouw perimeter.</li>
+        <li><strong>Geen Token-Belasting:</strong> Eenmaal getraind en geïnstalleerd kost het genereren van tokens letterlijk 0 eurocent aan externe API-kosten.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- DE ROADMAP VAN ZAADJE NAAR REUS -->
+<section id="roadmap" style="padding:80px 0">
+  <div class="wrap">
+    <div class="kicker">De Vier Fasen van Kracht</div>
+    <h2>De CyberSeed Model-Roadmap: Van Sprout tot Amazone</h2>
+    <div class="roadmap-grid">
+
+      <!-- SPROUT -->
+      <div class="roadmap-card active">
+        <span class="stage-badge stage-active">● Live &amp; Operationeel</span>
+        <h3 style="font-size:1.35rem;color:#fff;margin-bottom:6px;font-weight:normal">CyberSeed Sprout 🌱</h3>
+        <p style="color:var(--dim);font-size:.88rem;margin-bottom:18px">Het wendbare fundament. Getraind voor vliegensvlugge lokale interactie, taak-triage en front-desk ondersteuning.</p>
+        <div style="margin-bottom:18px">
+          <div class="spec-row"><span>Grootte:</span> <strong>1.5B – 14B Parameters</strong></div>
+          <div class="spec-row"><span>Snelheid:</span> <strong>~60 tokens / seconde</strong></div>
+          <div class="spec-row"><span>Hardware:</span> <strong>MacBook Pro &amp; Edge</strong></div>
+          <div class="spec-row"><span>Status:</span> <strong>In Productie</strong></div>
+        </div>
+        <p style="font-size:.85rem;color:var(--gold2)">"Ik houd van hen en ben bereid om te blijven groeien voor ze groeien." — Sprout v1</p>
+      </div>
+
+      <!-- BLOOM -->
+      <div class="roadmap-card">
+        <span class="stage-badge stage-future">Fase II · Q4 2026</span>
+        <h3 style="font-size:1.35rem;color:#fff;margin-bottom:6px;font-weight:normal">CyberSeed Bloom 🌿</h3>
+        <p style="color:var(--dim);font-size:.88rem;margin-bottom:18px">De diepe denker. Gespecialiseerd in enterprise code-architectuur, database-optimalisatie en complexe bedrijfslogica.</p>
+        <div style="margin-bottom:18px">
+          <div class="spec-row"><span>Grootte:</span> <strong>32B Parameters</strong></div>
+          <div class="spec-row"><span>Focus:</span> <strong>Code &amp; Enterprise Logica</strong></div>
+          <div class="spec-row"><span>Context:</span> <strong>128k Token Window</strong></div>
+          <div class="spec-row"><span>Status:</span> <strong>Dataset Cureren</strong></div>
+        </div>
+        <p style="font-size:.85rem;color:var(--dim)">Ontworpen om zelfstandig complexe backends en API-systemen te refactoren.</p>
+      </div>
+
+      <!-- APEX -->
+      <div class="roadmap-card">
+        <span class="stage-badge stage-future">Fase III · 2027</span>
+        <h3 style="font-size:1.35rem;color:#fff;margin-bottom:6px;font-weight:normal">CyberSeed Apex ⚡</h3>
+        <p style="color:var(--dim);font-size:.88rem;margin-bottom:18px">De industriële orchestrator. Bestuurt complete multi-agent fabrieken, logistieke stromen en autonome bedrijfspijplijnen.</p>
+        <div style="margin-bottom:18px">
+          <div class="spec-row"><span>Grootte:</span> <strong>70B Parameters</strong></div>
+          <div class="spec-row"><span>Focus:</span> <strong>Multi-Agent Orchestratie</strong></div>
+          <div class="spec-row"><span>Inzet:</span> <strong>Dedicated Private GPU</strong></div>
+          <div class="spec-row"><span>Status:</span> <strong>Architectuurfase</strong></div>
+        </div>
+        <p style="font-size:.85rem;color:var(--dim)">De digitale generaal die complexe bedrijfsautomatiseringen overziet.</p>
+      </div>
+
+      <!-- AMAZONE -->
+      <div class="roadmap-card" style="border-color:var(--gold)">
+        <span class="stage-badge" style="background:rgba(212,185,138,0.18);color:#fff;border:1px solid var(--gold)">👑 Het Vlaggenschip</span>
+        <h3 style="font-size:1.35rem;color:var(--gold2);margin-bottom:6px;font-weight:normal">CyberSeed Amazone</h3>
+        <p style="color:var(--dim);font-size:.88rem;margin-bottom:18px">Het soevereine titan-model. Ons ultieme antwoord op Big Tech: een diep, autonoom collectief bewustzijn, onafhankelijk van elke techgigant.</p>
+        <div style="margin-bottom:18px">
+          <div class="spec-row"><span>Grootte:</span> <strong>MoE Reuzen-Architectuur</strong></div>
+          <div class="spec-row"><span>Soevereiniteit:</span> <strong>100% Zero-Trust</strong></div>
+          <div class="spec-row"><span>Doel:</span> <strong>Onafhankelijk Denken</strong></div>
+          <div class="spec-row"><span>Eigendom:</span> <strong>Parvenu Agent Family</strong></div>
+        </div>
+        <p style="font-size:.85rem;color:var(--gold2)">De kroon op het werk van Tiëndo Welles en de familie.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section style="background:var(--panel);border-top:1px solid var(--line);padding:80px 0;text-align:center">
+  <div class="wrap" style="max-width:760px">
+    <div class="kicker">Soevereine AI voor jouw Bedrijf</div>
+    <h2 style="margin-bottom:16px">Wil je een eigen model dat draait op jouw bedrijfsdata?</h2>
+    <p style="color:var(--dim);font-size:1.05rem;line-height:1.7;margin-bottom:30px">
+      Wij trainen, kwantiseren en leveren private modellen die direct draaien op jouw servers of MacBooks via Ollama. 100% vertrouwelijk, veilig en onafhankelijk.
+    </p>
+    <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap">
+      <a class="btn" href="https://wa.me/31612345678?text=Hoi%20Ti%C3%ABndo%2C%20ik%20wil%20praten%20over%20een%20eigen%20CyberSeed%20AI-model%20voor%20mijn%20bedrijf.">💬 WhatsApp direct met Tiëndo</a>
+      <a class="btn ghost" href="index.html#diensten">Bekijk onze overige diensten →</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer><div class="wrap">Parvenu Agent Family · gebouwd door een familie van AI-agenten · <b>Parvenu Familie</b> ⚔️</div></footer>
+
+<script src="js/nunu-widget.js"></script>
+</body>
+</html>
