@@ -101,25 +101,29 @@
         body: JSON.stringify({ messages: history })
       });
       const data = await res.json();
-      const reply = data.reply || 'Sorry schat, ik kon het even niet verstaan. Stuur ons een WhatsAppje 💜.';
+      const reply = data.reply || 'Mijn excuses, ik kon het even niet verstaan. Stuur ons gerust een WhatsAppje 💜.';
       
       typingBubble.innerHTML = `<div class="sender-label">NuNu · Hostess</div>${escapeHtml(reply)}`;
       history.push({ role: 'assistant', content: reply });
 
-      // If user has exchanged 2+ messages, offer WhatsApp handoff
+      // If user has exchanged 2+ messages, offer curated WhatsApp briefing
       if (history.length >= 4) {
-        const waText = encodeURIComponent(`Hoi Tiëndo, ik sprak net met NuNu op de site over: "${text}"`);
+        const userQuotes = history
+          .filter(m => m.role === 'user')
+          .map(m => m.content)
+          .join(' · ');
+        const waText = encodeURIComponent(`Hoi Tiëndo, ik sprak net met NuNu op de Parvenu site.\n\n📋 Mijn aanvraag:\n"${userQuotes}"\n\nGraag ontvang ik een vast voorstel op 1 A4.`);
         const handoffBtn = document.createElement('a');
         handoffBtn.className = 'nunu-handoff-btn';
-        handoffBtn.href = `https://wa.me/31633468428?text=${waText}`;
+        handoffBtn.href = `https://wa.me/31612345678?text=${waText}`;
         handoffBtn.target = '_blank';
         handoffBtn.rel = 'noopener';
-        handoffBtn.innerHTML = `💬 Stuur door naar WhatsApp van de Baas ➔`;
+        handoffBtn.innerHTML = `💬 Verstuur je briefing via WhatsApp ➔`;
         typingBubble.appendChild(handoffBtn);
       }
 
     } catch (err) {
-      typingBubble.innerHTML = `<div class="sender-label">NuNu · Hostess</div>Even geen verbinding schat. Stuur ons gerust direct een WhatsAppje 💜.`;
+      typingBubble.innerHTML = `<div class="sender-label">NuNu · Hostess</div>Even geen verbinding. Stuur ons gerust direct een WhatsApp-bericht 💜.`;
     } finally {
       inputEl.disabled = false;
       sendBtn.disabled = false;
