@@ -23,6 +23,11 @@ header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(13,12,16,.
 .menu{display:flex;gap:24px;align-items:center}
 .menu a{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-decoration:none;transition:color .2s;white-space:nowrap}
 .menu a:hover{color:var(--gold2)}
+
+.menu a.gh-nav{display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(176,141,87,.3);color:var(--dim);padding:6px 14px;border-radius:20px;font-size:.74rem;transition:all .2s;background:rgba(22,21,27,.6);text-decoration:none}
+.menu a.gh-nav:hover{border-color:var(--gold);color:var(--gold2);background:rgba(176,141,87,.15)}
+.menu a.gh-nav svg{width:13px;height:13px;fill:currentColor}
+
 .menu a.cta{border:1px solid var(--gold);color:var(--gold2);padding:9px 18px;white-space:nowrap}
 .menu a.cta:hover{background:var(--gold);color:#1a1a1e}
 
@@ -90,7 +95,12 @@ footer b{color:var(--gold)}
   .nav{height:60px}
   .merk{font-size:.95rem;letter-spacing:.18em}
   .menu a:not(.cta){display:none}
-  .menu a.cta{padding:7px 12px;font-size:.72rem;letter-spacing:.08em;white-space:nowrap}
+  
+.menu a.gh-nav{display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(176,141,87,.3);color:var(--dim);padding:6px 14px;border-radius:20px;font-size:.74rem;transition:all .2s;background:rgba(22,21,27,.6);text-decoration:none}
+.menu a.gh-nav:hover{border-color:var(--gold);color:var(--gold2);background:rgba(176,141,87,.15)}
+.menu a.gh-nav svg{width:13px;height:13px;fill:currentColor}
+
+.menu a.cta{padding:7px 12px;font-size:.72rem;letter-spacing:.08em;white-space:nowrap}
   .desktop-br{display:none}
   .hero{padding:116px 0 54px}
   .hero .kicker{font-size:.65rem;letter-spacing:.22em;margin-bottom:14px}
