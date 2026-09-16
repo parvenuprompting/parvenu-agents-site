@@ -2,7 +2,6 @@
 [![HTML](https://img.shields.io/badge/stack-HTML%20%2F%20CSS-E34F26?logo=html5&logoColor=white)](https://github.com/parvenuprompting/parvenu-agents-site)
 [![No build step](https://img.shields.io/badge/build-no%20build%20step-5faf7d)](https://github.com/parvenuprompting/parvenu-agents-site)
 [![GrowKit](https://img.shields.io/badge/powered%20by-GrowKit%20Agent%20Harnas-b08d57)](https://parvenuprompting.github.io/grow-kit-site/)
-[![Dashboard](https://img.shields.io/badge/live%20dashboard-Agent%20Family-1a6b3c?style=flat-square)](https://ubiquitous-salamander-68aa0a.netlify.app)
 [![Brain](https://img.shields.io/badge/knowledge-Agent%20Family%20Brain-purple?style=flat-square)](https://github.com/parvenuprompting/Agent-Family-Brain)
 [![Autonomous](https://img.shields.io/badge/factory-P.A.C.%20Engine-black?style=flat-square)](https://github.com/parvenuprompting)
 
@@ -21,7 +20,6 @@ De officiële site van de **Parvenu Agent Family**: een autonome AI-familie die 
 ## Kern-Innovaties
 - **Agent Family Brain:** De centrale cryptografische kennislaag en grondwet die 20+ autonome agenten verbindt tot één soeverein denkend collectief zonder data- of secrets-lekkage.
 - **Parvenu Autonomous Centre (P.A.C.):** Onze zelfontwikkelde autonome softwarefabriek die aan de lopende band software ontwikkelt, test en zelfstandig onderhoudt.
-- **Parvenu Agent Family Dashboard:** Realtime overzicht van alle agenten, hun geboortedata, rollen, Telegram-handles, status en het weekoverzicht van opgeleverde projecten. Live te bekijken op [ubiquitous-salamander-68aa0a.netlify.app](https://ubiquitous-salamander-68aa0a.netlify.app).
 
 ## Eerste Oplevering
 - **VanLoyen Chauffeursdiensten:** 5 pagina's zakelijke website, WhatsApp-lead funnel, mobiel getest en direct live. Beoordeling: ★★★★★ van eigenaar Mo.
