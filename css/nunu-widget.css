@@ -1,0 +1,241 @@
+/* Parvenu Hostess Chat Widget (Baby Nu) */
+.nunu-toggle-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 99999;
+  background: #16151b;
+  border: 1px solid #b08d57;
+  color: #d4b98a;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-family: Georgia, serif;
+  font-size: 0.84rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.5), 0 0 14px rgba(176,141,87,0.2);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.25s ease;
+}
+.nunu-toggle-btn:hover {
+  background: #1f1e26;
+  border-color: #d4b98a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6), 0 0 20px rgba(212,185,138,0.35);
+}
+.nunu-dot {
+  width: 8px;
+  height: 8px;
+  background: #5faf7d;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #5faf7d;
+  display: inline-block;
+}
+
+/* Chat Window Modal */
+.nunu-chat-window {
+  position: fixed;
+  bottom: 84px;
+  right: 24px;
+  width: 370px;
+  max-width: calc(100vw - 32px);
+  height: 520px;
+  max-height: calc(100vh - 100px);
+  z-index: 99999;
+  background: rgba(16, 15, 20, 0.98);
+  backdrop-filter: blur(14px);
+  border: 1px solid #b08d57;
+  border-radius: 16px;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.7), 0 0 24px rgba(176,141,87,0.18);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  animation: nunuSlideUp 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.nunu-chat-window.open {
+  display: flex;
+}
+@keyframes nunuSlideUp {
+  from { opacity: 0; transform: translateY(12px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Header */
+.nunu-header {
+  background: #17161e;
+  border-bottom: 1px solid #2c2c34;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nunu-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nunu-title {
+  font-family: Georgia, serif;
+  font-size: 0.95rem;
+  color: #fff;
+  letter-spacing: 0.04em;
+}
+.nunu-subtitle {
+  font-size: 0.68rem;
+  color: #9a948a;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.nunu-close-btn {
+  background: none;
+  border: none;
+  color: #9a948a;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 4px;
+  line-height: 1;
+  transition: color 0.2s;
+}
+.nunu-close-btn:hover {
+  color: #d4b98a;
+}
+
+/* Body / Messages */
+.nunu-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+.nunu-bubble {
+  max-width: 86%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+.nunu-bubble.bot {
+  align-self: flex-start;
+  background: #1d1c24;
+  border: 1px solid rgba(176, 141, 87, 0.3);
+  color: #e8e4dc;
+  border-bottom-left-radius: 3px;
+}
+.nunu-bubble.user {
+  align-self: flex-end;
+  background: #252430;
+  border: 1px solid #383742;
+  color: #fff;
+  border-bottom-right-radius: 3px;
+}
+.nunu-bubble .sender-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #d4b98a;
+  margin-bottom: 4px;
+  font-family: Georgia, serif;
+}
+
+/* Chips */
+.nunu-chips {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 4px;
+}
+.nunu-chip {
+  background: #17161f;
+  border: 1px solid #2c2c34;
+  color: #d4b98a;
+  padding: 7px 12px;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.nunu-chip:hover {
+  background: #211f2c;
+  border-color: #b08d57;
+  color: #fff;
+}
+
+/* Footer / Input */
+.nunu-footer {
+  background: #17161e;
+  border-top: 1px solid #2c2c34;
+  padding: 12px 14px;
+}
+.nunu-form {
+  display: flex;
+  gap: 8px;
+}
+.nunu-input {
+  flex: 1;
+  background: #0d0c10;
+  border: 1px solid #2c2c34;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.nunu-input:focus {
+  border-color: #b08d57;
+}
+.nunu-send-btn {
+  background: #b08d57;
+  color: #0d0c10;
+  border: none;
+  font-weight: 600;
+  padding: 0 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  transition: background 0.2s;
+}
+.nunu-send-btn:hover {
+  background: #d4b98a;
+}
+.nunu-send-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.nunu-handoff-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #25d36622;
+  border: 1px solid #25d36655;
+  color: #7fe3a4;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.78rem;
+  margin-top: 8px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.nunu-handoff-btn:hover {
+  background: #25d36638;
+}
+
+@media(max-width: 600px) {
+  .nunu-chat-window {
+    bottom: 16px;
+    right: 16px;
+    left: 16px;
+    width: auto;
+    height: calc(100vh - 90px);
+  }
+}
