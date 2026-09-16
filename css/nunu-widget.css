@@ -292,11 +292,22 @@
 }
 
 @media(max-width: 600px) {
-  .nunu-chat-window {
+  .nunu-toggle-btn {
     bottom: 16px;
     right: 16px;
-    left: 16px;
+    padding: 8px 14px;
+    font-size: 0.78rem;
+    gap: 8px;
+  }
+  .nunu-btn-avatar {
+    width: 22px;
+    height: 22px;
+  }
+  .nunu-chat-window {
+    bottom: 12px;
+    right: 12px;
+    left: 12px;
     width: auto;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 80px);
   }
 }
