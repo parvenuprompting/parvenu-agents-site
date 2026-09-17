@@ -267,10 +267,27 @@
     </p>
 
     <div style="max-width:980px;margin:0 auto;border-radius:16px;overflow:hidden;border:1px solid rgba(176,141,87,0.35);box-shadow:0 20px 50px rgba(0,0,0,0.6);background:#0d0b10;">
-      <video style="width:100%;height:auto;display:block;" autoplay loop muted playsinline poster="images/promo-boardroom-poster.jpg">
-        <source src="video/promo-boardroom.mp4?v=branding" type="video/mp4">
-        Je browser ondersteunt geen video-tag.
-      </video>
+      <div style="position:relative;width:100%;line-height:0;">
+        <video style="width:100%;height:auto;display:block;" autoplay loop muted playsinline poster="images/promo-boardroom-poster.jpg?v=vector">
+          <source src="video/promo-boardroom.mp4?v=vector" type="video/mp4">
+          Je browser ondersteunt geen video-tag.
+        </video>
+
+        <!-- HAARSCHERP VECTOR WATERMARK (DESKTOP & MOBIEL) -->
+        <div class="video-vector-badge" style="position:absolute;bottom:16px;right:16px;z-index:5;pointer-events:none;display:flex;align-items:center;gap:8px;background:rgba(13,11,16,0.78);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(176,141,87,0.45);border-radius:999px;padding:6px 14px 6px 7px;box-shadow:0 4px 18px rgba(0,0,0,0.5);">
+          <svg width="22" height="22" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+            <defs>
+              <linearGradient id="pGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f5e6cc"/>
+                <stop offset="100%" stop-color="#b08d57"/>
+              </linearGradient>
+            </defs>
+            <circle cx="32" cy="32" r="30" fill="#141118" stroke="url(#pGoldGrad)" stroke-width="2.5"/>
+            <text x="32" y="45" font-family="Georgia, Times New Roman, serif" font-size="34" font-weight="bold" fill="url(#pGoldGrad)" text-anchor="middle">P</text>
+          </svg>
+          <span style="font-family:var(--serif, Georgia, serif);font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:#f5e6cc;font-weight:600;line-height:1;">Parvenu</span>
+        </div>
+      </div>
       <div style="padding:16px 24px;background:#141118;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;border-top:1px solid rgba(255,255,255,0.06);font-size:.9rem;">
         <span style="color:var(--gold2);font-weight:600;">⚡ Parvenu Autonomous Operations — 30+ Specialisten · Dagen, niet weken · Vanaf €395</span>
         <a class="btn" style="padding:8px 20px;font-size:.8rem;" href="#contact">Start Je Project →</a>
