@@ -27,12 +27,17 @@
     });
 
     // Mocht fullscreen verlaten of getriggerd worden, houd muted intact
-    document.addEventListener('fullscreenchange', function() {
+    function handleFullscreenChange() {
       video.muted = true;
-    });
-    document.addEventListener('webkitfullscreenchange', function() {
-      video.muted = true;
-    });
+      const isFs = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
+      if (isFs) {
+        video.style.opacity = '1';
+      } else {
+        video.style.opacity = '';
+      }
+    }
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
   }
 
   if (document.readyState === 'loading') {

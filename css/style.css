@@ -35,6 +35,15 @@ header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(13,12,16,.
 .hero{position:relative;overflow:hidden;padding:168px 0 92px;text-align:center;width:100%}
 .hero-bg-video{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;overflow:hidden;pointer-events:none}
 .hero-bg-video video{width:100%;height:100%;object-fit:cover;opacity:0.38}
+/* In fullscreen modus: 100% helder en fel, geen opacity of donkere filters */
+.hero-bg-video video:fullscreen,
+.hero-bg-video video:-webkit-full-screen,
+.hero-bg-video video:-moz-full-screen,
+.hero-bg-video video:-ms-fullscreen {
+  opacity: 1 !important;
+  filter: none !important;
+  background: #000;
+}
 .hero-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(ellipse at center, rgba(13,12,16,.4) 0%, rgba(13,12,16,.94) 85%)}
 .hero-video-btn{position:absolute;bottom:18px;right:22px;z-index:4;pointer-events:auto;background:rgba(22,21,27,.75);border:1px solid rgba(176,141,87,.4);color:var(--gold2);padding:7px 14px;border-radius:24px;font-size:.74rem;display:inline-flex;align-items:center;gap:7px;cursor:pointer;backdrop-filter:blur(8px);transition:all .2s;letter-spacing:.04em}
 .hero-video-btn:hover{background:rgba(176,141,87,.2);border-color:var(--gold);transform:scale(1.03)}
