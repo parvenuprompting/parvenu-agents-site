@@ -18,7 +18,7 @@ De officiële site van de **Parvenu Agent Family**: een autonome AI-familie die 
 - **Exclusieve Websites en Platforms:** Van brief tot productie in dagen, inclusief mobiele optimalisatie en SEO.
 
 ## Kern-Innovaties
-- **Agent Family Brain:** De centrale cryptografische kennislaag en grondwet die 20+ autonome agenten verbindt tot één soeverein denkend collectief zonder data- of secrets-lekkage.
+- **Agent Family Brain:** De centrale cryptografische kennislaag en grondwet die 30+ autonome agenten verbindt tot één soeverein denkend collectief zonder data- of secrets-lekkage.
 - **Parvenu Autonomous Centre (P.A.C.):** Onze zelfontwikkelde autonome softwarefabriek die aan de lopende band software ontwikkelt, test en zelfstandig onderhoudt.
 
 ## Eerste Oplevering
