@@ -34,7 +34,7 @@ header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(13,12,16,.
 /* hero */
 .hero{position:relative;overflow:hidden;padding:168px 0 92px;text-align:center;width:100%}
 .hero-bg-video{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;overflow:hidden;pointer-events:none}
-.hero-bg-video video{width:100%;height:100%;object-fit:cover;opacity:0.38}
+.hero-bg-video video{width:100%;height:100%;object-fit:cover;opacity:0.62}
 /* In fullscreen modus: 100% helder en fel, geen opacity of donkere filters */
 .hero-bg-video video:fullscreen,
 .hero-bg-video video:-webkit-full-screen,
@@ -44,15 +44,15 @@ header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(13,12,16,.
   filter: none !important;
   background: #000;
 }
-.hero-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(ellipse at center, rgba(13,12,16,.4) 0%, rgba(13,12,16,.94) 85%)}
+.hero-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(ellipse at center, rgba(13,12,16,.25) 0%, rgba(13,12,16,.78) 85%)}
 .hero-video-btn{position:absolute;bottom:18px;right:22px;z-index:4;pointer-events:auto;background:rgba(22,21,27,.75);border:1px solid rgba(176,141,87,.4);color:var(--gold2);width:38px;height:38px;padding:0;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;backdrop-filter:blur(8px);transition:all .2s}
 .hero-video-btn:hover{background:rgba(176,141,87,.25);border-color:var(--gold);transform:scale(1.08)}
 .hero-content{position:relative;z-index:2}
-.hero .kicker{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-bottom:22px}
-.hero h1{font-size:clamp(1.75rem,3.1vw,2.55rem);font-weight:normal;letter-spacing:.02em;max-width:1120px;margin:0 auto 26px;line-height:1.24}
+.hero .kicker{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-bottom:22px;text-shadow:0 2px 10px rgba(0,0,0,.85)}
+.hero h1{font-size:clamp(1.75rem,3.1vw,2.55rem);font-weight:normal;letter-spacing:.02em;max-width:1120px;margin:0 auto 26px;line-height:1.24;text-shadow:0 3px 18px rgba(0,0,0,.9), 0 1px 4px rgba(0,0,0,.95)}
 .hero h1 em{font-style:italic;color:var(--gold2)}
 .desktop-br{display:inline}
-.hero p{max-width:680px;margin:0 auto 38px;color:var(--dim);font-size:1.02rem}
+.hero p{max-width:680px;margin:0 auto 38px;color:#d5d5dc;font-size:1.02rem;text-shadow:0 2px 12px rgba(0,0,0,.9)}
 .hero .btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 .btn{display:inline-block;padding:14px 28px;border:1px solid var(--gold);color:var(--gold2);text-decoration:none;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;transition:all .25s;text-align:center;max-width:100%}
 .btn:hover{background:var(--gold);color:#1a1a1e}
