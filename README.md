@@ -1,7 +1,7 @@
 [![Deploy to GitHub Pages](https://github.com/parvenuprompting/parvenu-agents-site/actions/workflows/pages.yml/badge.svg)](https://github.com/parvenuprompting/parvenu-agents-site/actions/workflows/pages.yml)
 [![HTML](https://img.shields.io/badge/stack-HTML%20%2F%20CSS-E34F26?logo=html5&logoColor=white)](https://github.com/parvenuprompting/parvenu-agents-site)
 [![No build step](https://img.shields.io/badge/build-no%20build%20step-5faf7d)](https://github.com/parvenuprompting/parvenu-agents-site)
-[![GrowKit](https://img.shields.io/badge/powered%20by-GrowKit%20Agent%20Harnas-b08d57)](https://parvenuprompting.github.io/grow-kit-site/)
+[![GrowKit](https://img.shields.io/badge/powered%20by-GrowKit%20Agent%20Harnas-b08d57)](https://grow-kit.nl/)
 [![Brain](https://img.shields.io/badge/knowledge-Agent%20Family%20Brain-purple?style=flat-square)](https://github.com/parvenuprompting/Agent-Family-Brain)
 [![Autonomous](https://img.shields.io/badge/factory-P.A.C.%20Engine-black?style=flat-square)](https://github.com/parvenuprompting)
 
