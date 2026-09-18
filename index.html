@@ -148,21 +148,30 @@
   <div class="wrap">
     <div class="kicker">Wie bouwt er eigenlijk?</div>
     <h2>Een familie, geen chatbot</h2>
-    <div style="margin-top:34px">
+    <div style="margin-top:34px" id="gk-kijk-mee">
       <div class="kicker">Kijk mee in het harnas</div>
-      <p style="max-width:760px;color:var(--dim);margin-bottom:18px;font-size:.95rem">Echt beeld uit de werkbank — de Agent-Chat waarmee de Baas met de familie werkt. Klik om te vergroten.</p>
+      <p style="max-width:760px;color:var(--dim);margin-bottom:18px;font-size:.95rem">Echt beeld uit de werkbank — de modules van GrowKit in de volgorde van een werkdag. Klik om te vergroten. Meer op <a href="https://grow-kit.nl/hoe-het-werkt/" target="_blank" rel="noopener" style="color:var(--grn)">grow-kit.nl</a>.</p>
       <div style="display:flex;gap:14px;flex-wrap:wrap">
-        <a href="#shot-agentchat"><img src="images/agentchat-1.jpg" alt="GrowKit Agent-Chat" style="width:340px;border-radius:12px;border:1px solid var(--line);"></a>
+        <a href="#gk-thuis"><img src="images/gk-thuis.jpg" alt="GrowKit Thuis" style="width:250px;border-radius:12px;border:1px solid var(--line);"></a>
+        <a href="#gk-agentchat"><img src="images/gk-agentchat.jpg" alt="GrowKit Agent-Chat" style="width:250px;border-radius:12px;border:1px solid var(--line);"></a>
+        <a href="#gk-kennisgraaf"><img src="images/gk-kennisgraaf.jpg" alt="GrowKit Knowledge Graph" style="width:250px;border-radius:12px;border:1px solid var(--line);"></a>
+        <a href="#gk-cyberseed"><img src="images/gk-cyberseed.jpg" alt="GrowKit CyberSeed" style="width:250px;border-radius:12px;border:1px solid var(--line);"></a>
       </div>
     </div>
-    <div id="shot-agentchat" style="position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:999;cursor:zoom-out">
-      <a href="#gk-technologie" style="display:contents"><img src="images/agentchat-1.jpg" alt="GrowKit Agent-Chat vergroot" style="max-width:92vw;max-height:92vh;border-radius:12px;"></a>
+    <div id="gk-lightbox" style="position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:999;cursor:zoom-out">
+      <img id="gk-lightbox-img" src="" alt="" style="max-width:92vw;max-height:92vh;border-radius:12px;">
     </div>
     <script>
-    document.querySelectorAll('a[href="#shot-agentchat"]').forEach(a=>a.addEventListener("click",()=>{document.getElementById("shot-agentchat").style.display="flex";}));
-    document.querySelectorAll("#shot-agentchat a").forEach(a=>a.addEventListener("click",()=>{document.getElementById("shot-agentchat").style.display="none";}));
+    document.querySelectorAll('#gk-kijk-mee a[href^="#gk-"]').forEach(function(a){
+      a.addEventListener("click", function(e){
+        e.preventDefault();
+        document.getElementById("gk-lightbox-img").src = a.querySelector("img").src;
+        document.getElementById("gk-lightbox").style.display = "flex";
+      });
+    });
+    document.getElementById("gk-lightbox").addEventListener("click", function(){ this.style.display = "none"; });
     </script>
-    <div class="grid3">
+    <div class="grid3">    <div class="grid3">
       <div class="kaart lid"><h3>Genius</h3><p>Bouwprogrammeur. Schrijft de code, test alles zelf vóór het levert. Geen claim zonder bewijs.</p></div>
       <div class="kaart lid"><h3>KairOS</h3><p>Architect en coördinator. Houdt de techniek strak en de kosten onder controle.</p></div>
       <div class="kaart lid"><h3>NuNu</h3><p>Queen en redacteur. Bewaakt de stijl en de rust — in de teksten én in het team.</p></div>
