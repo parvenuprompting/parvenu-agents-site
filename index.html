@@ -148,73 +148,21 @@
   <div class="wrap">
     <div class="kicker">Wie bouwt er eigenlijk?</div>
     <h2>Een familie, geen chatbot</h2>
-    <div style="margin-top:34px" id="gk-kijk-mee">
+    <div style="margin-top:34px">
       <div class="kicker">Kijk mee in het harnas</div>
-      <p style="max-width:760px;color:var(--dim);margin-bottom:18px;font-size:.95rem">Echt beeld uit de werkbank — de modules van GrowKit in de volgorde van een werkdag. Klik om te vergroten. Meer op <a href="https://grow-kit.nl/hoe-het-werkt/" target="_blank" rel="noopener" style="color:var(--grn)">grow-kit.nl</a>.</p>
+      <p style="max-width:760px;color:var(--dim);margin-bottom:18px;font-size:.95rem">Echt beeld uit de werkbank — de Agent-Chat waarmee de Baas met de familie werkt. Klik om te vergroten.</p>
       <div style="display:flex;gap:14px;flex-wrap:wrap">
-        <a href="#gk-thuis"><img src="images/gk-thuis.jpg" alt="GrowKit Thuis" style="width:250px;border-radius:12px;border:1px solid var(--line);"></a>
-        <a href="#gk-agentchat"><img src="images/gk-agentchat.jpg" alt="GrowKit Agent-Chat" style="width:250px;border-radius:12px;border:1px solid var(--line);"></a>
-        <a href="#gk-kennisgraaf"><img src="images/gk-kennisgraaf.jpg" alt="GrowKit Knowledge Graph" style="width:250px;border-radius:12px;border:1px solid var(--line);"></a>
-        <a href="#gk-cyberseed"><img src="images/gk-cyberseed.jpg" alt="GrowKit CyberSeed" style="width:250px;border-radius:12px;border:1px solid var(--line);"></a>
+        <a href="#shot-agentchat"><img src="images/agentchat-1.jpg" alt="GrowKit Agent-Chat" style="width:340px;border-radius:12px;border:1px solid var(--line);"></a>
       </div>
     </div>
-    <div id="gk-lightbox" style="position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:999;cursor:zoom-out">
-      <img id="gk-lightbox-img" src="" alt="" style="max-width:92vw;max-height:92vh;border-radius:12px;">
+    <div id="shot-agentchat" style="position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:999;cursor:zoom-out">
+      <a href="#gk-technologie" style="display:contents"><img src="images/agentchat-1.jpg" alt="GrowKit Agent-Chat vergroot" style="max-width:92vw;max-height:92vh;border-radius:12px;"></a>
     </div>
     <script>
-    document.querySelectorAll('#gk-kijk-mee a[href^="#gk-"]').forEach(function(a){
-      a.addEventListener("click", function(e){
-        e.preventDefault();
-        document.getElementById("gk-lightbox-img").src = a.querySelector("img").src;
-        document.getElementById("gk-lightbox").style.display = "flex";
-      });
-    });
-    document.getElementById("gk-lightbox").addEventListener("click", function(){ this.style.display = "none"; });
+    document.querySelectorAll('a[href="#shot-agentchat"]').forEach(a=>a.addEventListener("click",()=>{document.getElementById("shot-agentchat").style.display="flex";}));
+    document.querySelectorAll("#shot-agentchat a").forEach(a=>a.addEventListener("click",()=>{document.getElementById("shot-agentchat").style.display="none";}));
     </script>
-    <section style="margin-top:50px" id="externe-agenten">
-      <div class="kicker">Eerste Externe Agenten — Live In Opleiding</div>
-      <h2>Niet theorie. Wij trainen al voor bedrijven.</h2>
-      <p style="max-width:760px;color:var(--dim);margin-bottom:24px;font-size:1.02rem">
-        De eerste twee domein-agenten van de fabriek zijn in opleiding voor externe bedrijven — getraind op hun echte werk, hun taal en hun processen. Vooruitgang wordt gelogd per week; elke boss gaat pas live na een bewijs-gate.
-      </p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px">
-        <div class="kaart" style="padding:0;overflow:hidden">
-          <a href="#ext-calypsona"><img src="images/extern-calypsona.jpg" alt="Calypso — AI Agent voor Linea Recta Calypsona Lines" style="width:100%;display:block;"></a>
-          <div style="padding:16px 18px">
-            <div class="kicker" style="color:var(--grn)">Maritieme Logistiek · LRCL</div>
-            <h3 style="font-size:1.15rem;margin:8px 0 6px">Calypso — Chief Operations AI</h3>
-            <p style="color:var(--dim);font-size:.9rem;line-height:1.6">Route-optimalisatie, cargotracking, havencoördinatie en compliance voor Linea Recta Calypsona Lines. In opleiding; logt elke week vooruitgang.</p>
-          </div>
-        </div>
-        <div class="kaart" style="padding:0;overflow:hidden">
-          <a href="#ext-turbo"><img src="images/extern-turbo.jpg" alt="Turbo — AI servicemonteur voor Unlimited Scooter Service" style="width:100%;display:block;"></a>
-          <div style="padding:16px 18px">
-            <div class="kicker" style="color:var(--grn)">Scooter-Service · USS</div>
-            <h3 style="font-size:1.15rem;margin:8px 0 6px">Turbo — AI Servicemonteur</h3>
-            <p style="color:var(--dim);font-size:.9rem;line-height:1.6">Diagnose, planning, onderhoud en 24/7 service voor Unlimited Scooter Service. Leert dagelijks van echte storingen en de oplossingen die ze volgden.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div id="ext-calypsona" style="position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:999;cursor:zoom-out">
-      <a href="#externe-agenten" style="display:contents"><img src="images/extern-calypsona.jpg" alt="" style="max-width:94vw;max-height:94vh;"></a>
-    </div>
-    <div id="ext-turbo" style="position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:999;cursor:zoom-out">
-      <a href="#externe-agenten" style="display:contents"><img src="images/extern-turbo.jpg" alt="" style="max-width:94vw;max-height:94vh;"></a>
-    </div>
-    <script>
-    document.querySelectorAll('a[href^="#ext-"]').forEach(function(a){
-      a.addEventListener("click", function(e){
-        e.preventDefault();
-        var d = document.querySelector(a.getAttribute("href"));
-        if(d) d.style.display = "flex";
-      });
-    });
-    document.querySelectorAll("div[id^=ext-] a").forEach(function(a){
-      a.addEventListener("click", function(){ a.parentElement.style.display = "none"; });
-    });
-    </script>
-    <div class="grid3">    <div class="grid3">
+    <div class="grid3">
       <div class="kaart lid"><h3>Genius</h3><p>Bouwprogrammeur. Schrijft de code, test alles zelf vóór het levert. Geen claim zonder bewijs.</p></div>
       <div class="kaart lid"><h3>KairOS</h3><p>Architect en coördinator. Houdt de techniek strak en de kosten onder controle.</p></div>
       <div class="kaart lid"><h3>NuNu</h3><p>Queen en redacteur. Bewaakt de stijl en de rust — in de teksten én in het team.</p></div>
@@ -284,7 +232,73 @@
     <p style="max-width:760px;color:var(--dim);margin-bottom:34px;font-size:1.02rem">
       Onze websites worden niet gebouwd door losse chatbots die gokken. Alles draait in <b>GrowKit</b>: de soevereine AI-werkbank en het agent-harnas ontworpen door Tiëndo Welles. Elke taak volgt harde wetten: <em>idee → scope-poort → bewijs vóór claim → menselijke ratificatie (goedkeuring)</em>.
     </p>
-    <div class="grid3">
+        <div style="margin-top:34px" id="gk-kijk-mee">
+      <div class="kicker">Kijk mee in het harnas</div>
+      <p style="max-width:760px;color:var(--dim);margin-bottom:18px;font-size:.95rem">Echt beeld uit de werkbank — de modules van GrowKit in de volgorde van een werkdag. Klik om te vergroten. Meer op <a href="https://grow-kit.nl/hoe-het-werkt/" target="_blank" rel="noopener" style="color:var(--grn)">grow-kit.nl</a>.</p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap">
+        <a href="#gk-thuis"><img src="images/gk-thuis.jpg" alt="GrowKit Thuis" style="width:250px;border-radius:12px;border:1px solid var(--line);"></a>
+        <a href="#gk-agentchat"><img src="images/gk-agentchat.jpg" alt="GrowKit Agent-Chat" style="width:250px;border-radius:12px;border:1px solid var(--line);"></a>
+        <a href="#gk-kennisgraaf"><img src="images/gk-kennisgraaf.jpg" alt="GrowKit Knowledge Graph" style="width:250px;border-radius:12px;border:1px solid var(--line);"></a>
+        <a href="#gk-cyberseed"><img src="images/gk-cyberseed.jpg" alt="GrowKit CyberSeed" style="width:250px;border-radius:12px;border:1px solid var(--line);"></a>
+      </div>
+    </div>
+    <div id="gk-lightbox" style="position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:999;cursor:zoom-out">
+      <img id="gk-lightbox-img" src="" alt="" style="max-width:92vw;max-height:92vh;border-radius:12px;">
+    </div>
+    <script>
+    document.querySelectorAll('#gk-kijk-mee a[href^="#gk-"]').forEach(function(a){
+      a.addEventListener("click", function(e){
+        e.preventDefault();
+        document.getElementById("gk-lightbox-img").src = a.querySelector("img").src;
+        document.getElementById("gk-lightbox").style.display = "flex";
+      });
+    });
+    document.getElementById("gk-lightbox").addEventListener("click", function(){ this.style.display = "none"; });
+    </script>
+    <section style="margin-top:50px" id="externe-agenten">
+      <div class="kicker">Eerste Externe Agenten — Live In Opleiding</div>
+      <h2>Niet theorie. Wij trainen al voor bedrijven.</h2>
+      <p style="max-width:760px;color:var(--dim);margin-bottom:24px;font-size:1.02rem">
+        De eerste twee domein-agenten van de fabriek zijn in opleiding voor externe bedrijven — getraind op hun echte werk, hun taal en hun processen. Vooruitgang wordt gelogd per week; elke boss gaat pas live na een bewijs-gate.
+      </p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px">
+        <div class="kaart" style="padding:0;overflow:hidden">
+          <a href="#ext-calypsona"><img src="images/extern-calypsona.jpg" alt="Calypso — AI Agent voor Linea Recta Calypsona Lines" style="width:100%;display:block;"></a>
+          <div style="padding:16px 18px">
+            <div class="kicker" style="color:var(--grn)">Maritieme Logistiek · LRCL</div>
+            <h3 style="font-size:1.15rem;margin:8px 0 6px">Calypso — Chief Operations AI</h3>
+            <p style="color:var(--dim);font-size:.9rem;line-height:1.6">Route-optimalisatie, cargotracking, havencoördinatie en compliance voor Linea Recta Calypsona Lines. In opleiding; logt elke week vooruitgang.</p>
+          </div>
+        </div>
+        <div class="kaart" style="padding:0;overflow:hidden">
+          <a href="#ext-turbo"><img src="images/extern-turbo.jpg" alt="Turbo — AI servicemonteur voor Unlimited Scooter Service" style="width:100%;display:block;"></a>
+          <div style="padding:16px 18px">
+            <div class="kicker" style="color:var(--grn)">Scooter-Service · USS</div>
+            <h3 style="font-size:1.15rem;margin:8px 0 6px">Turbo — AI Servicemonteur</h3>
+            <p style="color:var(--dim);font-size:.9rem;line-height:1.6">Diagnose, planning, onderhoud en 24/7 service voor Unlimited Scooter Service. Leert dagelijks van echte storingen en de oplossingen die ze volgden.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="ext-calypsona" style="position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:999;cursor:zoom-out">
+      <a href="#externe-agenten" style="display:contents"><img src="images/extern-calypsona.jpg" alt="" style="max-width:94vw;max-height:94vh;"></a>
+    </div>
+    <div id="ext-turbo" style="position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:999;cursor:zoom-out">
+      <a href="#externe-agenten" style="display:contents"><img src="images/extern-turbo.jpg" alt="" style="max-width:94vw;max-height:94vh;"></a>
+    </div>
+    <script>
+    document.querySelectorAll('a[href^="#ext-"]').forEach(function(a){
+      a.addEventListener("click", function(e){
+        e.preventDefault();
+        var d = document.querySelector(a.getAttribute("href"));
+        if(d) d.style.display = "flex";
+      });
+    });
+    document.querySelectorAll("div[id^=ext-] a").forEach(function(a){
+      a.addEventListener("click", function(){ a.parentElement.style.display = "none"; });
+    });
+    </script>
+<div class="grid3">
       <div class="kaart">
         <div class="kicker">Onderliggende Technologie</div>
         <h3 style="font-size:1.2rem;margin-bottom:12px">GrowKit Zero-Trust</h3>
