@@ -171,6 +171,49 @@
     });
     document.getElementById("gk-lightbox").addEventListener("click", function(){ this.style.display = "none"; });
     </script>
+    <section style="margin-top:50px" id="externe-agenten">
+      <div class="kicker">Eerste Externe Agenten — Live In Opleiding</div>
+      <h2>Niet theorie. Wij trainen al voor bedrijven.</h2>
+      <p style="max-width:760px;color:var(--dim);margin-bottom:24px;font-size:1.02rem">
+        De eerste twee domein-agenten van de fabriek zijn in opleiding voor externe bedrijven — getraind op hun echte werk, hun taal en hun processen. Vooruitgang wordt gelogd per week; elke boss gaat pas live na een bewijs-gate.
+      </p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px">
+        <div class="kaart" style="padding:0;overflow:hidden">
+          <a href="#ext-calypsona"><img src="images/extern-calypsona.jpg" alt="Calypso — AI Agent voor Linea Recta Calypsona Lines" style="width:100%;display:block;"></a>
+          <div style="padding:16px 18px">
+            <div class="kicker" style="color:var(--grn)">Maritieme Logistiek · LRCL</div>
+            <h3 style="font-size:1.15rem;margin:8px 0 6px">Calypso — Chief Operations AI</h3>
+            <p style="color:var(--dim);font-size:.9rem;line-height:1.6">Route-optimalisatie, cargotracking, havencoördinatie en compliance voor Linea Recta Calypsona Lines. In opleiding; logt elke week vooruitgang.</p>
+          </div>
+        </div>
+        <div class="kaart" style="padding:0;overflow:hidden">
+          <a href="#ext-turbo"><img src="images/extern-turbo.jpg" alt="Turbo — AI servicemonteur voor Unlimited Scooter Service" style="width:100%;display:block;"></a>
+          <div style="padding:16px 18px">
+            <div class="kicker" style="color:var(--grn)">Scooter-Service · USS</div>
+            <h3 style="font-size:1.15rem;margin:8px 0 6px">Turbo — AI Servicemonteur</h3>
+            <p style="color:var(--dim);font-size:.9rem;line-height:1.6">Diagnose, planning, onderhoud en 24/7 service voor Unlimited Scooter Service. Leert dagelijks van echte storingen en de oplossingen die ze volgden.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="ext-calypsona" style="position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:999;cursor:zoom-out">
+      <a href="#externe-agenten" style="display:contents"><img src="images/extern-calypsona.jpg" alt="" style="max-width:94vw;max-height:94vh;"></a>
+    </div>
+    <div id="ext-turbo" style="position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:999;cursor:zoom-out">
+      <a href="#externe-agenten" style="display:contents"><img src="images/extern-turbo.jpg" alt="" style="max-width:94vw;max-height:94vh;"></a>
+    </div>
+    <script>
+    document.querySelectorAll('a[href^="#ext-"]').forEach(function(a){
+      a.addEventListener("click", function(e){
+        e.preventDefault();
+        var d = document.querySelector(a.getAttribute("href"));
+        if(d) d.style.display = "flex";
+      });
+    });
+    document.querySelectorAll("div[id^=ext-] a").forEach(function(a){
+      a.addEventListener("click", function(){ a.parentElement.style.display = "none"; });
+    });
+    </script>
     <div class="grid3">    <div class="grid3">
       <div class="kaart lid"><h3>Genius</h3><p>Bouwprogrammeur. Schrijft de code, test alles zelf vóór het levert. Geen claim zonder bewijs.</p></div>
       <div class="kaart lid"><h3>KairOS</h3><p>Architect en coördinator. Houdt de techniek strak en de kosten onder controle.</p></div>
